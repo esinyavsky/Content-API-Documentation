@@ -1,1 +1,0 @@
-© 2017 The Associated Press

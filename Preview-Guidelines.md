@@ -1,3 +1,5 @@
+[Back to Home](Readme.md) 
+
 # About the Preview Environment
 The AP Content API preview environment allows you to test new features and changes prior to the general release to ensure that they are properly handled by your client application. AP strongly recommends testing the changes in the preview environment before they become available in your production systems.
 
@@ -18,3 +20,5 @@ Intended as a testing platform, the preview environment provides restricted down
 ```XML
 <usageTerms role="apusecode:860">Not included in your plan. To learn more about license rights, please contact your licensing representative.</usageTerms>
 ```
+
+[Back to Top](#about-the-preview-environment) 

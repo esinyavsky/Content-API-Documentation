@@ -1,9 +1,16 @@
-# Search Method
+[Back to Home](Readme.md) 
 
-## Description
+# Search and Feed
+- [Search Method](#search-method)
+- [Feed Method](#feed-method)
+- [Supported Query Syntax](#supported-query-syntax)
+
+## Search Method
+
+### Description
 Searches content using the specified search criteria. Optionally, returns content item pricing information.
 
-## Request
+### Request
 - Method: _GET_
 - Request URI:
 ```
@@ -11,13 +18,13 @@ https://api.ap.org/[{version}]/content/search?api_key={api_key}[{optional_parame
 ```
 > **_Important:_** The request URI must be URL-encoded.
 
-### Base URI Parameter
+#### Base URI Parameter
 - **version** (optional): The API version; for example, _v2_. When this parameter value is not specified, the latest API version is returned. 
 
-### Optional Parameters
+#### Optional Parameters
 > **_Note_**: An implied AND operator is used between the parameters.
 
-- **q**: The query expression used to search for content. For more information, see [Supported Query Syntax](https://github.com/esinyavsky/Content-API-Documentation/wiki/Search-and-Feed#supported-query-syntax). 
+- **q**: The query expression used to search for content. For more information, see [Supported Query Syntax](#supported-query-syntax).
 
 - **include**: A comma-separated list of fields to include in the response.
 
@@ -50,18 +57,20 @@ https://api.ap.org/[{version}]/content/search?api_key={api_key}[{optional_parame
 
 - **format**: The response format (currently, the only valid value is *json*). If no format is specified as the *format* parameter value or in the Accept header, JSON is returned. The *format* parameter value takes precedence over the Accept header value when both are specified.
 
-### Request Headers (Optional)
+#### Request Headers (Optional)
 
 - **Accept**: The MIME type of the returned data format (currently, only JSON is supported). The default is *application/json*. The format parameter value takes precedence over the Accept header value when both are specified.
 
 - **Accept-Encoding**: Compresses the response to the gzip format. The valid value is *gzip*.
 
-# Feed Method
+[Back to Top](#search-and-feed) 
 
-## Description
+## Feed Method
+
+### Description
 Returns a feed of content matching the specified criteria. Optionally, returns content item pricing information.
 
-## Request
+### Request
 - Method: _GET_
 - Request URI:
 ```
@@ -69,13 +78,13 @@ https://api.ap.org/[{version}]/content/feed?api_key={api_key}[{optional_paramete
 ```
 > **_Important:_** The request URI must be URL-encoded.
 
-### Base Request URI Parameter
+#### Base Request URI Parameter
 - **version** (optional): The API version; for example, _v2_. When this parameter value is not specified, the latest API version is returned. 
 
-### Optional Parameters
+#### Optional Parameters
 > **_Note_**: An implied AND operator is used between the parameters.
 
-- **q**: The query expression used to filter content. For more information, see [Supported Query Syntax](https://github.com/esinyavsky/Content-API-Documentation/wiki/Search-and-Feed#supported-query-syntax). 
+- **q**: The query expression used to filter content. For more information, see [Supported Query Syntax](#supported-query-syntax).
 
 - **include**: A comma-separated list of fields to include in the response.
 
@@ -104,10 +113,15 @@ https://api.ap.org/[{version}]/content/feed?api_key={api_key}[{optional_paramete
 
 - **format**: The response format (currently, the only valid value is *json*). If no format is specified as the *format* parameter value or in the Accept header, JSON is returned. The *format* parameter value takes precedence over the Accept header value when both are specified.
 
-### Request Headers (Optional)
+#### Request Headers (Optional)
 
 - **Accept**: The MIME type of the returned data format (currently, only JSON is supported). The default is *application/json*. The format parameter value takes precedence over the Accept header value when both are specified.
 
 - **Accept-Encoding**: Compresses the response to the gzip format. The valid value is *gzip*.
 
-# Supported Query Syntax
+[Back to Top](#search-and-feed) 
+
+## Supported Query Syntax
+
+[Back to Top](#search-and-feed) 
+

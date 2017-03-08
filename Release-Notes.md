@@ -1,5 +1,12 @@
-# API Codes and Error Messages
-## JSON Error Messages
+[Back to Home](Readme.md) 
+
+# Release Notes - Content API V3
+
+- [API Codes and Error Messages](#api-codes-and-error-messages)
+- [Use Codes](#use-codes)
+
+## API Codes and Error Messages
+### JSON Error Messages
 
 **_Important note for users of JSON search results:_** If you are currently requesting search results in JSON, you must _make changes to your client application_ to process the error messages returned in JSON.
 
@@ -12,7 +19,7 @@ By default, error messages are returned in XML. If JSON is requested (in the _Ac
   "message": "Specified value for detail 'tires' is invalid"
 }
 ```
-## Detail Error Codes
+### Detail Error Codes
 
 In addition to HTTP status codes, Content API now returns detail error codes if available. For example, the following error is returned if _query_ is specified instead of _q_ in the search request:
 
@@ -34,9 +41,11 @@ In addition to HTTP status codes, Content API now returns detail error codes if 
 
 For more information about API codes and suggested actions, see "API Codes".
 
-# Use Codes
+[Back to Top](#release-notes---content-api-v3) 
 
-## Search Results and Full Item Metadata
+## Use Codes
+
+### Search Results and Full Item Metadata
 
 A use code is now returned in addition to the pricing message in search results and full item metadata responses if the _showPricing=true_ parameter is specified in the request:
 
@@ -47,7 +56,7 @@ A use code is now returned in addition to the pricing message in search results 
 | Not Included in Your Plan (Extra Charge) | 851 | All plans| Not included in your plan. Available for an extra charge.
 | Not Included in Your Plan (Contact Licensing) | 860 | All plans| Not included in your plan. To learn more about license rights, please contact your licensing representative.
 
-### XML
+#### XML
 
 In XML search results and full item metadata responses, the use code for the pricing message is returned in the "role" attribute of the `usageTerms `element (for example, `role="apusecode:801"`):
 
@@ -55,7 +64,7 @@ In XML search results and full item metadata responses, the use code for the pri
 <usageTerms role="apusecode:801">Included in your plan.</usageTerms>
 ```
 
-###JSON
+####JSON
 
 In JSON search results, the pricing message use code is returned in the "apUseCode" property; for example:
 
@@ -66,3 +75,5 @@ In JSON search results, the pricing message use code is returned in the "apUseCo
    "Included in your plan."],
 "apUseCode": "801",
 ```
+
+[Back to Top](#release-notes---content-api-v3) 
