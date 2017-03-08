@@ -2,7 +2,7 @@
 - [Content API V2 Developer's Guide (PDF)](versions/v2/AP_Content_API_Developer_Guide.pdf)
 - [Content API V4 Developer's Guide (Preview)](versions/preview/Readme.md) 
 
-# AP Content API V3
+# AP Content API V4
 
 [About AP Content API](#about-content-api) 
 - [Typical Workflow Overview](#typical-workflow-overview) 
